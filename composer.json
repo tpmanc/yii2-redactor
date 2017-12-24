@@ -23,7 +23,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "tpmanc\\redactor\\": "/"
+      "yii\\redactor\\": "/"
     }
   },
   "minimum-stability": "dev",
