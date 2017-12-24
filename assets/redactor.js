@@ -7626,17 +7626,22 @@
 				{
 					this.selection.get();
 
+				    var node1 = this.selection.getMarker(1);
 
-					var node1 = this.selection.getMarker(1);
+				    this.selection.setMarker(this.range, node1, true);
 
-					this.selection.setMarker(this.range, node1, true);
-					if (this.range.collapsed === false)
-					{
-						var node2 = this.selection.getMarker(2);
-						this.selection.setMarker(this.range, node2, false);
-					}
+				    if (this.range.collapsed === false) {
+				        var node2 = this.selection.getMarker(2);
+				        this.selection.setMarker(this.range, node2, false);
 
-					this.savedSel = this.$editor.html();
+				        // Fix for Chrome58 Issues
+				        if (this.utils.browser('chrome')) {
+				              this.caret.set(node1, 0, node2, 0);
+				         }
+				         // End Chrome58 Issues
+				    }
+
+				    this.savedSel = this.$editor.html();
 				},
 				getMarker: function(num)
 				{
