@@ -1,5 +1,5 @@
 {
-  "name": "yiidoc/yii2-redactor",
+  "name": "tpmanc/yii2-redactor",
   "description": "Extension redactor for Yii2 Framework.",
   "keywords": [
     "yii2",
@@ -11,20 +11,19 @@
   ],
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
-  "support": {
-    "issues": "https://github.com/yiidoc/yii2-redactor/issues?state=open",
-    "wiki": "http://www.yiidoc.com/wiki/",
-    "source": "https://github.com/yiidoc/yii2-redactor"
-  },
   "authors": [
     {
       "name": "Nghia Nguyen",
       "email": "zinzinday@gmail.com"
+    },
+    {
+      "name": "Chikancev Nikita",
+      "email": "tpxtrime@mail.ru"
     }
   ],
   "autoload": {
     "psr-4": {
-      "yii\\redactor\\": "/"
+      "tpmanc\\redactor\\": "/"
     }
   },
   "minimum-stability": "dev",
